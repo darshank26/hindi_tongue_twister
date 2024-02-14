@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "430695156775",
+    "project_id": "tongue-twister-in-hindi",
+    "storage_bucket": "tongue-twister-in-hindi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430695156775:android:e8d856a773ed3f7cbd9202",
+        "android_client_info": {
+          "package_name": "com.darshankomu.hindi_tongue_twister"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaC3CUPI-_1AfTcgO7qojayRWkNObPIQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
