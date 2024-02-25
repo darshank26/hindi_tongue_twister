@@ -12,21 +12,21 @@ import 'package:share_plus/share_plus.dart';
 import '../AdHelper/adshelper.dart';
 import '../utils/string_hi.dart';
 
-class EasyList extends StatefulWidget {
-  const EasyList({Key? key}) : super(key: key);
+class MediumList extends StatefulWidget {
+  const MediumList({Key? key}) : super(key: key);
 
   @override
-  State<EasyList> createState() => _EasyListState();
+  State<MediumList> createState() => _MediumListState();
 }
 
-class _EasyListState extends State<EasyList> {
+class _MediumListState extends State<MediumList> {
 
   FlutterTts ftts = FlutterTts();
-
 
   late BannerAd _bannerAd;
 
   bool _isBannerAdReady = false;
+
 
 
   @override
@@ -34,7 +34,6 @@ class _EasyListState extends State<EasyList> {
     super.dispose();
     _bannerAd.dispose();
   }
-
 
   @override
   void initState() {
@@ -68,38 +67,37 @@ class _EasyListState extends State<EasyList> {
   Widget build(BuildContext context) {
 
 
-    final List<String> easy_list = [
-      "फासले का फासला।",
-      "चटाई पे चटनी चटाई।",
-      "जो हँसेगा वो फंसेगा, जो फंसेगा वो हँसेगा।",
-      "डबल बबल गम बबल डबल।",
-      "नीला अंगूर काला लंगूर।",
-      "उड़ी चिड़ी ऊंची उड़ी सब्जी पूड़ी ठंडी पड़ी।",
-      "अब कूद रस्सी रस्सी कूद कूद मत गिर पड़।",
-      "गोल में गप्पा गप्पे में गोला।",
-      "नदी किनारे किराने की दुकान।",
+    final List<String> medium_list = [
+      "पके पेड़ पर पका पपीता, पका पेड़ या पका पपीता, पके पेड़ को पकडे पिंकू, पिंकू पकडे पका पपीता।",
       "राधा की बूनी में नींबू की धारा।",
-      "टेची में कैंची टेची पे कैंची।",
-      "शरद चन्द्र मकरन मरकण शंकर नन्द।",
-      "कच्चा पापड़, पक्का पापड़।",
-      "राजा गोप गोपाल गोपग्गम दास।",
-      "लाला गोपे गोपाल गोपंग्गम दास।",
+      "नंदनगढ़ में, नंदू के नाना ने, नंदू की नानी को, नदिया किनारे, नीम के नीचे, नीनी, करायी।",
+      "लाला गोपे गोपाल गपुँग़म दास।",
+      "तुला राम ताला तोल के तेल में तुल गया, तुला हुआ तोला तले हुए तेल में तल गया।",
       "कोका कोला कोकिला का किला।",
-      "भालु काला आलू भूरा।",
-      "बुड्ढ़े के बाल गुड्ढ़े के गाल।",
-      "पीतल के पतीले मे पका पपीता पीला पीला।",
-      "कच्चा कद्दू, पक्का कद्दू।",
-      "छल्ले में छल्ला छज्जे पे चच्चा।",
-      "दूबे दुबई में डूब गया।",
-      "लकड़ी पर चकरी चकरी में लड़की।",
-      "आले में अलमारी काली अलमारी।"
+      "राजा गोप गोपाल गोपग्गम दास।",
+      "मदन मोहन मालवीय मदा्स में मछली मारते मारते मरे।",
+      "पानी में पकोड़ी कचोड़ी की चटोरी।",
+      "ले नियम दे नियम दे नियम ले नियम।",
+      "चाचा के चौड़े चबूतरे पर चील ने चूहे को चोंच से चबा डाला।",
+      "नज़र नज़र में हर एक नज़र में हमे उस नज़र की तलाश थी। वो नज़र मिली तो सही पर उस नज़र में अब वो नज़र कहाँ थी।",
+      "मदन मोहन मालवीय मदा्स में मछली मारते मारते मरे।",
+      "राधा की बूनी में नींबू की धारा।",
+      "कच्चा पापड़ पक्का पापड़।",
+      "लाल लाल लिफाफे में लड्डू।",
+      "लाली बोली लालू से लल्लन लाया था लालू की शादी पे, लाल लाल लिफाफे में लड्डू।",
+      "पानी में पकोड़ी कचोड़ी की चटोरी।",
+      "ले नियम दे नियम दे नियम ले नियम।",
+      "चाचा के चौड़े चबूतरे पर चील ने चूहे को चोंच से चबा डाला।",
+      "नंदू के नाना ने नंदू की नानी को नंद नगर मे नागिन दिखाई।",
+      "चंदू के चाचा ने, चंदू की चाची को, चांदनी-चौक में, चांदनी रात में, चांदी के चम्मच से चटनी चटाई।",
+      "चार चोर चार छाते में चार अचार चाटे, चाट-चाट कर चार छाता चोर चुराकर भागे।",
+      "चार कचड़ी कच्चे चाचा, चार कचड़ी पक्के. पक्की कचड़ी कच्चे चाचा, कच्ची कचड़ी पक्के।"
     ];
-
 
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: easy_back,
+        backgroundColor: medium_back,
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(4.0),
           child: Container(
@@ -110,8 +108,8 @@ class _EasyListState extends State<EasyList> {
         title: Row(
           children: [
             Text(
-                  easy_hi,
-                    style: GoogleFonts.poppins(textStyle: TextStyle(fontSize: 28,color: kprimarycolor,fontWeight: FontWeight.w500)))
+                medium_hi,
+                style: GoogleFonts.poppins(textStyle: TextStyle(fontSize: 28,color: kprimarycolor,fontWeight: FontWeight.w500)))
           ],
         ),
 
@@ -131,7 +129,7 @@ class _EasyListState extends State<EasyList> {
 
       backgroundColor: home_back,
       body: ListView.builder(
-        itemCount: easy_list.length,
+        itemCount: medium_list.length,
         itemBuilder: (context, index) {
           return ListTile(
             dense:true,
@@ -156,7 +154,7 @@ class _EasyListState extends State<EasyList> {
                       Flexible(
                         child: Padding(
                           padding: const EdgeInsets.all(10.0),
-                          child: Text(easy_list[index],
+                          child: Text(medium_list[index],
                               style: GoogleFonts.lato(textStyle: TextStyle(fontSize: 22,color: kprimarycolor,fontWeight: FontWeight.w600))
 
                           ),
@@ -175,7 +173,7 @@ class _EasyListState extends State<EasyList> {
                           print(ftts.isLanguageAvailable('hi-IN'));
                           print(ftts.isLanguageInstalled('hi-IN'));
 
-                          ftts.speak(easy_list.elementAt(index));
+                          ftts.speak(medium_list.elementAt(index));
                         },
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -189,7 +187,7 @@ class _EasyListState extends State<EasyList> {
 
                       GestureDetector(
                         onTap: () async{
-                          await Clipboard.setData(ClipboardData(text:easy_list.elementAt(index) ));
+                          await Clipboard.setData(ClipboardData(text:medium_list.elementAt(index) ));
 
                         },
                         child: Padding(
@@ -204,7 +202,7 @@ class _EasyListState extends State<EasyList> {
 
                       GestureDetector(
                         onTap: () {
-                          Share.share(easy_list.elementAt(index));
+                          Share.share(medium_list.elementAt(index));
                         },
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -224,7 +222,7 @@ class _EasyListState extends State<EasyList> {
             ),
             onTap: () {
               // Handle item tap
-              print("Item tapped: ${easy_list[index]}");
+              print("Item tapped: ${medium_list[index]}");
             },
           );
         },
@@ -240,7 +238,6 @@ class _EasyListState extends State<EasyList> {
             ),
         ],
       ),
-
 
 
     );

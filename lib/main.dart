@@ -219,30 +219,32 @@ class _SplashScreenState extends State<IntroSplashScreen> {
       debugShowCheckedModeBanner: false,
       title: 'Tongue Twister in Hindi',
       home: Scaffold(
-        backgroundColor: ksplashback,
+        backgroundColor: home_back,
         body: Stack(
           children: [
+
             Center(
               child: Image.asset('assets/images/splashback.png',
                 alignment: Alignment.center,
                 fit: BoxFit.fitWidth,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Align(
-                alignment: Alignment.bottomCenter,
-                child: Container(
-                  width: double.infinity,
-                  child: Text(
-                      "Designed & Developed By - Darshan Komu",
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(textStyle: TextStyle(fontSize: 16,color: Colors.black87,fontWeight: FontWeight.w600,))
 
-                  ),
-                ),
-              ),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.all(8.0),
+            //   child: Align(
+            //     alignment: Alignment.bottomCenter,
+            //     child: Container(
+            //       width: double.infinity,
+            //       child: Text(
+            //           "Designed & Developed By - Darshan Komu",
+            //           textAlign: TextAlign.center,
+            //           style: GoogleFonts.poppins(textStyle: TextStyle(fontSize: 16,color: Colors.black87,fontWeight: FontWeight.w600,))
+            //
+            //       ),
+            //     ),
+            //   ),
+            // ),
           ],
         ),
 

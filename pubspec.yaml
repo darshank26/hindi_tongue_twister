@@ -44,7 +44,7 @@ dependencies:
   page_transition: ^2.0.4
   toggle_switch: ^2.1.0
   font_awesome_flutter: ^10.6.0
-  flutter_tts: ^3.8.3
+  flutter_tts: ^3.8.5
   animated_text_kit: ^4.2.2
 
 
@@ -58,6 +58,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   line_icons: ^2.0.3
   flutter_svg: ^2.0.9
+  share_plus: ^7.2.2
+  swipe_cards: ^2.0.0+1
 
 dev_dependencies:
   flutter_test:

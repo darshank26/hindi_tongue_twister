@@ -1,5 +1,7 @@
 import 'dart:ui';
 
+import 'package:flutter/material.dart';
+
 const kprimarycolor = Color(0xff0d141a);
 const ksecondcolor = Color(0xff3ba2ff);
 const kthirdcolor = Color(0xff006ac0);
@@ -11,7 +13,7 @@ const home_back = Color(0xFFF2E5D8);
 const easy_back = Color(0xFFDFFF69);
 const medium_back = Color(0xFFFE7900);
 const hard_back = Color(0xFFBB98FE);
-const random_back = Color(0xFFF89020);
+const random_back =  Colors.teal;
 const saved_list = Color(0xFFA6FFFF);
 const about_list = Color(0xFFFFB300);
 
